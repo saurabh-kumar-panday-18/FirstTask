@@ -1,5 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
+
+
 
 export default function Login() {
   return (
@@ -10,21 +11,27 @@ export default function Login() {
         </h2>
         <form>
           <div>
-            <label className="text-sm font-medium text-gray-300 block mb-1">
+            <label htmlFor="email" className="text-sm font-medium text-gray-300 block mb-1">
               Email
             </label>
             <input
               type="email"
+              name="email"
+              id="email"
+              required
               placeholder="Enter the Email"
-              className="w-full px-4 py-3 bg-white/10 text-white border rounded-lg placeholder-gray-400 focus:outline-none focus:border-slate-600 transition"
+              className="w-full px-4 py-3 bg-white/10 text-white border rounded-lg placeholder-gray-400 outline-none transition"
             />
 
             <div>
-              <label>Password</label>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
+                name="password"
+                id="password"
+                required
                 placeholder="Enter the password"
-                className="w-full px-4 py-3 bg-white/10 text-white border rounded-lg focus:border-slate-600 placeholder-gray-400 transition"
+                className="w-full px-4 py-3 bg-white/10 text-white  rounded-lg  placeholder-gray-400 transition border outline-none "
               />
             </div>
 
